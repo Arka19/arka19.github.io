@@ -1,0 +1,97 @@
+BODY{
+      font-family:Tahoma; 
+      font-size:12pt; 
+      color:#000000;
+}
+
+
+
+.sitename {
+      color:#036887;
+}
+
+.maintitlename { 
+      font-family:Helvetica;
+      font-size:32pt; 
+      color:#036887; 
+      font-weight:500;
+}
+
+.subheading {
+      font-size:18pt; 
+      color:#2C3E50; 
+      font-weight:500;
+}
+                  
+.papertitle {
+      font-size:12pt; 
+      color:#036887; 
+      font-weight:bold;
+}
+
+.conferencename {
+      font-size:12pt; 
+      color:#96281B;
+}
+                  
+.emailaddress {
+      font-size:12pt; 
+      color:#000000;
+}
+
+.section {
+      font-size:20pt;
+      color:#2C3E50; 
+      text-align:justify; 
+      font-weight:500;
+}
+
+p {
+      font-size:12pt;
+}
+
+
+a {
+      color:#1F3A93; 
+      text-decoration: none
+}
+
+a:visited {
+      color:#1F3A93;
+}
+
+ul {
+      list-style-type: square; 
+      margin:0; 
+      padding:5
+}                
+
+.summary {      
+      background-color: lightblue;
+      font-size:12px;
+      text-align: justify;
+}
+
+.summary p {      
+      font-size:10pt;
+      line-height: 1.5;
+      padding: 0px 20px;
+}
+
+.summary a, .summary a:visited {
+      color: #306D60; 
+}
+
+
+.collapse {
+      background-color: #dfe4ea;
+      margin-top: 5pt;
+      margin-left: 10pt;
+      padding-top: 5pt;
+      padding-bottom: 5pt;
+}
+
+hr { 
+    border-color: #000000;     
+    border-width: 1px;
+}

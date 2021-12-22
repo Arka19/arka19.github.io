@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+
+
+		<head>
+			<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+			<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+
+
+			<meta name="title" content="Lattices in Cryptography" />
+			<meta itemprop="name" content="Lattices in Cryptography" />
+			<meta property="og:title" content="Lattices in Cryptography" />
+			<meta name="description" content="Lattices in Cryptography" />
+			<meta itemprop="description" content="Lattices in Cryptography" />
+			<meta id="meta-tag-description" property="og:description" content="Lattices in Cryptography" />
+
+			<style type="text/css">
+				BODY{font-family:Helvetica; font-size:12pt; color:#000000;}
+				  .sitename{color:#036887;}
+				  .maintitlename{ font-family:Helvetica;font-size:32pt; color:#036887; font-weight:500;}
+				  .subheading{ font-size:16pt; color:#2C3E50; font-weight:500;}
+				  .papertitle{font-size:12pt; color:#036887; font-weight:bold;}
+				  .conferencename{font-size:12pt; color:#96281B;}
+				  .subtext{font-size:10pt; color:#787878;}
+				  .emailaddress{font-size:12pt; color:#000000;}
+				  .section{font-size:22pt;color:#2C3E50; text-align:justify; font-weight:500;}
+				  p{font-size:12pt;}
+				  a{color:#1F3A93; text-decoration: none}
+				  a:visited{color:#1F3A93;}
+				  ul{list-style-type: decimal; margin:0; padding:5}
+				  table {
+						  border-collapse: collapse;
+						  width: 70%;
+						}
+				//table td + td { border-left:2px solid black; }		
+
+						th, td {
+						  text-align: left;
+						  padding: 8px;
+						}
+
+						
+						//tr:nth-child(even){background-color: #f2f2f2}
+						
+
+						th {
+						  background-color: #4CAF50;
+						  color: white;
+						}
+			</style>
+
+
+			<title>Lattices in Cryptography</title>
+		</head>
+
+
+	<body>
+
+
+		<div align="center">
+			<table>
+				
+				<tr>
+
+					<td>
+
+						<div style="padding-top: 100px;"></div>
+
+
+						<p>
+							Resources for lattices and its application to cryptography. There is a wonderful recent survey by Chirs Peikert <a href="https://web.eecs.umich.edu/~cpeikert/pubs/lattice-survey.pdf">here</a>.<br />
+						</p>
+
+						
+						<div style="padding-top: 30px;"></div>
+
+						<hr />
+
+						<div style="padding-top: 30px;"></div>
+
+						<br />
+						<span class="section">Schedule</span> 
+
+						<div style="padding-top: 30px;"></div>
+
+						<div align="center"> 
+						<table>
+						<col width="40">
+  						<col width="80">	
+						  <tr>
+						    <th>Lecture</th>
+						    <th>Topic</th>						    
+						  </tr>
+						  <tr>
+						    <td>9th April 2020 [<a href="./Lec_1_annotated.pdf">notes</a>]</td>
+						    <td>Defining lattices, lattice basis, fundamental parallelepiped</td>						    
+						  </tr>
+
+						  <tr>
+						    <td>9th July 2020 [<a href="./Lec_2_annotated.pdf">notes</a>]</td>
+						    <td>SIS, Worst-case to average-case reduction</td>						    
+						  </tr>	
+
+						  <tr>
+						    <td>23rd July 2020 [<a href="./Lec_3_annotated.pdf">notes</a>]</td>
+						    <td>LWE, Search to Decision, PKE : Regev + dual-Regev</td>						    
+						  </tr>		
+
+						  <tr>
+						    <td>13th August 2020 [<a href="./Lec_4_annotated.pdf">notes</a>]</td>
+						    <td>Lattice Trapdoors and Signatures</td>						    
+						  </tr>						  						
+						</table>	
+						</div>	
+
+						<div style="padding-top: 30px;"></div>
+
+						<span class="section">References</span>
+
+						<div style="padding-top: 30px;"></div>
+
+						<span class="subheading">Lecture 1</span>
+
+						<div style="padding-top: 20px;"></div>
+
+						<ul>
+    						<li><span class="papertitle">Winter School on Cryptography: Introduction to Lattices - Oded Regev</span>														
+							[<a href="https://www.youtube.com/watch?v=4ulHOV8iLls">video</a>][<a href="http://cyber.biu.ac.il/wp-content/uploads/2017/01/slides-barilan1-2.pdf">slides</a>]<br />
+							<span class="subtext">(Watch on mono if using headpohones)</span>
+							</li>		
+							<br />	
+
+							<li> <a href="https://people.csail.mit.edu/vinodv/6876-Fall2015/L1.pdf">Lecture 1</a>, <a href="https://people.csail.mit.edu/vinodv/COURSES/CSC2414-F11/L2.pdf">Lecture 2</a> (from an earlier version of the course) and <a href="https://people.csail.mit.edu/vinodv/6876-Fall2015/L3.pdf">Lecture 3</a> from Vinod's Fall 2015 Course </li>									
+
+							<br />	
+
+							<li>
+								<a href="https://cims.nyu.edu/~regev/teaching/lattices_fall_2004/ln/introduction.pdf">Lecture 1</a> from Oded's 2004 Course.
+							</li>
+
+							<br />	
+
+							<li>
+								<a href="https://simons.berkeley.edu/sites/default/files/docs/14953/intro.pdf">Slides</a> from Daniele's 2020 <a href="https://www.youtube.com/watch?v=21IzHN9-CjE">talk</a>.
+							</li>
+							
+
+						</ul>
+
+						<div style="padding-top: 30px;"></div>
+
+						<span class="subheading">Lecture 2</span>
+
+						<div style="padding-top: 20px;"></div>
+
+						<ul>
+    						<li><span class="papertitle">Winter School on Cryptography: Reduction for SIS - Vadim Lyubashevsky</span>														
+							[<a href="https://www.youtube.com/watch?v=P3I3kCJedIo">video</a>][<a href="http://cyber.biu.ac.il/wp-content/uploads/2017/01/slides-barilan3-4.pdf">slides</a>]<br />
+							<span class="subtext">(Watch on mono if using headpohones)</span>
+							</li>		
+							<br />	
+
+							<li><span class="papertitle">The Mathematics of Lattices I - Vinod Vaikuntanathan</span>														
+							[<a href="https://www.youtube.com/watch?v=LlPXfy6bKIY">video</a>]<br />							
+							</li>		
+							<br />	
+
+							<li> <a href="http://people.csail.mit.edu/vinodv/CS294/lecture1.pdf">Lecture 1</a>, <a href="http://people.csail.mit.edu/vinodv/CS294/lecture3.pdf">Lecture 3</a>  from Vinod's Spring 2020 Course </li>									
+
+							<br />	
+
+							<li>
+								<a href="https://cims.nyu.edu/~regev/teaching/lattices_fall_2004/ln/averagecase.pdf">Lecture 12</a> from Oded's 2004 Course.
+							</li>
+
+							<br />	
+
+							<li>
+								<a href="https://drive.google.com/file/d/1OT46pK3tjWej34B-iyf3amoOMuPuGQoO/view">Lecture 5</a> from Barak, Muli and Nir's Fall 2019 Course.
+							</li>
+
+							<br />	
+
+							<li>
+								<a href="https://simons.berkeley.edu/sites/default/files/docs/14953/intro.pdf">Slides</a> from Daniele's 2020 <a href="https://www.youtube.com/watch?v=21IzHN9-CjE">talk</a>.
+							</li>
+
+							<br />	
+
+							
+
+							<li>
+								<a href="https://crypto.stanford.edu/cs355/18sp/lec9.pdf">Lecture 9</a> from Henry, Sam and David's course Topics in Cryptography.
+							</li>
+
+							<br />	
+							
+
+						</ul>
+
+						<div style="padding-top: 30px;"></div>
+
+						<span class="subheading">Lecture 3</span>
+
+						<div style="padding-top: 20px;"></div>
+
+						<ul>
+    						<li><span class="papertitle">[Regev'05] - On Lattices, Learning with Errors,Random Linear Codes, and Cryptography</span> [<a href="https://cims.nyu.edu/~regev/papers/qcrypto.pdf">link</a>]<br />
+    						</li>											
+    						<br />
+
+    						<li><span class="papertitle">[Gentry-Peikert-Vaikuntanathan'08] - How to Use a Short Basis: Trapdoors for Hard Lattices and New Cryptographic Constructions</span> [<a href="https://web.eecs.umich.edu/~cpeikert/pubs/trap_lattice.pdf">link</a>]<br />
+    						</li>	
+    						<br />
+
+						
+
+    						<li><span class="papertitle">Winter School on Cryptography: Learning With Errors - Chris Peikert</span>														
+							[<a href="https://www.youtube.com/watch?v=Fp-IiVpgDlc">video</a>][<a href="http://cyber.biu.ac.il/wp-content/uploads/2017/01/slides-barilan5.pdf">slides</a>]<br />
+							<span class="subtext">(Watch on mono if using headpohones)</span>
+							</li>		
+							<br />	
+
+							<li><span class="papertitle">The Mathematics of Lattices II - Vinod Vaikuntanathan</span>														
+							[<a href="https://www.youtube.com/watch?v=SZkTJMorxnM">video</a>]<br />							
+							</li>		
+							<br />	
+
+							<li> <a href="http://people.csail.mit.edu/vinodv/CS294/lecture1.pdf">Lecture 1</a>  from Vinod's Spring 2020 Course </li>	
+
+							<br />	
+
+							<li> <a href="https://people.csail.mit.edu/vinodv/6876-Fall2015/L13.pdf">Lecture 13</a> from Vinod's Fall 2015 Course </li>									
+
+							<br />			
+							
+
+							<li>
+								Chris Peikert's 2020 <a href="https://www.youtube.com/watch?v=K_fNK04yG4o">talk</a> at Simons Institute.
+							</li>
+
+							<br />	
+
+							<li>
+								Oded Regev's <a href="https://cims.nyu.edu/~regev/papers/lwesurvey.pdf">LWE Survey</a>.
+							</li>
+
+							<br />	
+
+							
+
+							
+
+						</ul>
+
+
+						<div style="padding-top: 30px;"></div>
+
+						<span class="subheading">Lecture 4</span>
+
+						<div style="padding-top: 20px;"></div>
+
+						<ul>
+    						<li><span class="papertitle">[Nguyen-Regev'06] - Learning a Parallelepiped: Cryptanalysis of GGH and NTRU Signatures</span> [<a href="https://cims.nyu.edu/~regev/papers/gghattack.pdf">link</a>]<br />
+    						</li>											
+    						<br />
+
+    						<li><span class="papertitle">[Gentry-Peikert-Vaikuntanathan'08] - How to Use a Short Basis: Trapdoors for Hard Lattices and New Cryptographic Constructions</span> [<a href="https://web.eecs.umich.edu/~cpeikert/pubs/trap_lattice.pdf">link</a>]<br />
+    						</li>	
+    						<br />
+
+							<li><span class="papertitle">Winter School on Cryptography: Attacking GGH - Oded Regev</span>														
+							[<a href="http://www.youtube.com/watch?v=wqf_W2HWRhE">video</a>][<a href="http://cyber.biu.ac.il/wp-content/uploads/2017/01/slides-barilan8.pdf">slides</a>]<br />	
+							</li>		
+							<br />							
+
+    						<li><span class="papertitle">Winter School on Cryptography: Trapdoors and Applications - Chris Peikert</span>														
+							[<a href="https://www.youtube.com/watch?v=v4dgUPaQmDs">video</a>][<a href="http://cyber.biu.ac.il/wp-content/uploads/2017/01/slides-barilan9.pdf">slides</a>]<br />	
+							</li>		
+							<br />	
+
+							<li><span class="papertitle">The Mathematics of Lattices II - Vinod Vaikuntanathan</span>														
+							[<a href="https://www.youtube.com/watch?v=SZkTJMorxnM">video</a>]<br />							
+							</li>		
+							<br />	
+
+							<li><span class="papertitle">Lattice Trapdoors - Shweta Agrawal</span>														
+							[<a href="https://www.youtube.com/watch?v=fVen9vkFWlk">video</a>][<a href="https://simons.berkeley.edu/sites/default/files/docs/14983/simons-lattice-shweta.pdf">slides</a>]<br />							
+							</li>		
+							<br />	
+
+							<li> <a href="http://people.csail.mit.edu/vinodv/CS294/lecture6.pdf">Lecture 6</a>  from Vinod's Spring 2020 Course </li>	
+
+							<br />	
+
+							<li> <a href="https://people.csail.mit.edu/vinodv/6876-Fall2015/L17.pdf">Lecture 17</a> from Vinod's Fall 2015 Course </li>									
+
+							<br />	
+
+							<li>
+								<a href="https://drive.google.com/file/d/1R4kogytJZYAzzmzglcp46t7KeagVCx4J/view">Lecture 7</a> from Barak, Muli and Nir's Fall 2019 Course.
+							</li>
+
+							<br />	
+
+
+							<li>
+								<a href="https://cims.nyu.edu/~regev/teaching/lattices_fall_2004/ln/cvp.pdf">Lecture 3</a> from Oded's Fall 2004 Course.
+							</li>
+
+							<br />			
+							
+
+						</ul>
+
+						<div style="padding-top: 30px;"></div>
+
+						<span class="section">Related Courses</span>
+
+						<div style="padding-top: 30px;"></div>
+
+						<ul>
+							<li>
+							<span class="papertitle">BIU Winter School: Lattice-Based Cryptography and Applications (2012)</span>
+							Craig Gentry, Vadim Lyubashevsky, Chris Peikert, Oded Regev. 							
+							[<a href="https://cyber.biu.ac.il/event/the-2nd-biu-winter-school/">link</a>]<br />	
+							</li>
+
+							</br>
+
+							<li>
+							<span class="papertitle">Advanced Topics in Cryptography: Lattices (2015)</span>
+							Vinod Vaikuntanathan.							
+							[<a href="https://people.csail.mit.edu/vinodv/6876-Fall2015/index.html">link</a>]<br />	
+							</li>
+
+							</br>
+
+							<li>
+							<span class="papertitle">Lattices, Learning with Errors and Post-Quantum Cryptography (2020)</span>
+							Vinod Vaikuntanathan.							
+							[<a href="http://people.csail.mit.edu/vinodv/CS294/">link</a>]<br />	
+							</li>
+
+							</br>
+
+							<li>
+							<span class="papertitle">(Simons Institute) Lattices: Algorithms, Complexity, and Cryptography Boot Camp (2020)</span>
+							Daniele Micciancio, Noah Stephens-Davidowitz, Chris Peikert, Leo Ducas, Martin Albrecht, Nadia Heninger, Damien Stehle, Shweta Agrawal, Vinod Vaikuntanathan, Yilei Chen.							
+							[<a href="https://simons.berkeley.edu/workshops/schedule/10563">link</a>]<br />	
+							</li>
+
+							</br>
+
+							<li>
+							<span class="papertitle">Lattices in Cryptography (2015)</span>
+							Chris Peikert.							
+							[<a href="http://web.eecs.umich.edu/~cpeikert/lic15/index.html">link</a>]<br />	
+							</li>
+
+							</br>
+
+							<li>
+							<span class="papertitle">Homomorphic Encryption and Lattices (2013)</span>
+							Shai Halevi, Tal Malkin.							
+							[<a href="http://www.cs.columbia.edu/~tal/6261/SP13/">link</a>]<br />								
+							</li>
+
+							</br>
+
+							<li>
+							<span class="papertitle">Homomorphic Encryption and Lattices (2011)</span>
+							Shai Halevi.							
+							[<a href="https://shaih.github.io/lattices-and-HE-class/">link</a>]<br />								
+							</li>
+
+							</br>
+
+							<li>
+							<span class="papertitle">Lattices and Their Application to Cryptography (1998)</span>
+							Cynthia Dwork.							
+							[<a href="https://www.cs.jhu.edu/~achoud/dwork-lattice-lectures.pdf">link (lecture notes)</a>]<br />								
+							</li>
+
+							</br>
+
+							<li>
+							<span class="papertitle">Lattices (2019)</span>
+							Barak Weiss, Muli Safra, Nir Bitansky.						
+							[<a href="https://sites.google.com/view/lattices/home">link</a>]<br />															
+							</li>
+
+							</br>
+
+							<li>
+							<span class="papertitle">Lattices Algorithms and Applications (2010)</span>
+							Daniele Micciancio.							
+							[<a href="http://cseweb.ucsd.edu/classes/wi10/cse206a/">link</a>]<br />	
+							<span class="subtext">(More complexity theoretic view of lattices)</span>							
+							</li>
+
+							</br>
+
+							<li>
+							<span class="papertitle">Lattices in Computer Science (2004)</span>
+							Oded Regev.							
+							[<a href="https://cims.nyu.edu/~regev/teaching/lattices_fall_2004">link</a>]<br />	
+							<span class="subtext">(More complexity theoretic view of lattices)</span>							
+							</li>
+
+							</br>
+
+							<li>
+							<span class="papertitle">Lattices, Convexity and Algorithms (2013)</span>
+							Daniel Dadush, Oded Regev.							
+							[<a href="https://cs.nyu.edu/courses/spring13/CSCI-GA.3033-013/index.html">link</a>]<br />	
+							<span class="subtext">(More complexity theoretic view of lattices)</span>
+							</li>
+
+							</br>
+						</ul>
+
+						<br />
+						
+						<div style="padding-top: 100px;"></div>
+
+					</td>
+
+			</tr>
+
+			
+
+
+
+
+			</table> 
+		</div>  <!-- For centering the entire page -->
+
+
+	</body>
+</html>
