@@ -125,7 +125,7 @@
 
 
 						<ul>
-							<li><span class="papertitle">Oblivious Transfer from Trapdoor Permutations in Minimal Rounds </span>[<a href="https://eprint.iacr.org/2021/1433">eprint</a>]<br />
+							<li><span class="papertitle">Oblivious Transfer from Trapdoor Permutations in Minimal Rounds </span><br />
 							Arka Rai Choudhuri, Michele Ciampi, Vipul Goyal, Abhishek Jain, Rafail Ostrovsky <br />
 							<span class="conferencename">TCC 2021</span><br />
 							</li>
@@ -189,18 +189,37 @@
 							<br />	
 
 
-              				<li><span class="papertitle">Founding Secure Computation on Blockchains </span>[<a href="https://eprint.iacr.org/2019/253">eprint</a>]<br />
+              				<li><span class="papertitle">Founding Secure Computation on Blockchains </span>[<a href="https://eprint.iacr.org/2019/253">eprint</a>][<a data-toggle="collapse"  href="#CGJ19abs">show summary</a>]<br />
 							Arka Rai Choudhuri, Vipul Goyal, Abhishek Jain <br />
 							<span class="conferencename">EUROCRYPT 2019</span><br />
+								 <div id="CGJ19abs" class="collapse">
+								  	<span class="summary">
+								  		<p>
+								  			The Fiat-Shamir heuristic transforms a public-coin interactive proof into a non-interactive argument, by replacing the verifier with a cryptographic hash function that is applied to the protocol’s transcript. Constructing hash functions for which this transformation is sound is a central and long-standing open question in cryptography.
+								  		</p>
+
+								  		<p>
+								  			The Fiat-Shamir heuristic transforms a public-coin interactive proof into a non-interactive argument, by replacing the verifier with a cryptographic hash function that is applied to the protocol’s transcript. Constructing hash functions for which this transformation is sound is a central and long-standing open question in cryptography.
+								  		</p>
+								    </span>
+								  </div>		
 							</li>
 
 							<br />
         
-              				<li><span class="papertitle">Two Round Information-Theoretic MPC with Malicious Security </span>[<a href="https://eprint.iacr.org/2018/1078">eprint</a>]<br />
+              				<li><span class="papertitle">Two Round Information-Theoretic MPC with Malicious Security </span>[<a href="https://eprint.iacr.org/2018/1078">eprint</a>][<a data-toggle="collapse"  href="#ACGJ18sum">show summary</a>]<br />
 							Prabhanjan Ananth, Arka Rai Choudhuri, Aarushi Goel, Abhishek Jain <br />
 							<span class="conferencename">EUROCRYPT 2019</span><br />
 							</li>
+							<div id="ACGJ18sum" class="collapse">
+								  	<span class="summary">
+								  		<p>
+								  			In this work, we look to extend our protocol to the information theoretic setting. A naive instantiation would be to start with information theoretic garbling of 
 
+								  			Given the reliance on garbling schemes, one might hope that we can start with functionalities that have polynomially sized formulas, such as those in $\mathsf{NC}^1$
+								  		</p>
+								    </span>
+							</div>	
 							<br />
 
 							<li><span class="papertitle">Round-Optimal Secure Multiparty Computation with Honest Majority </span>[<a href="https://eprint.iacr.org/2018/572">eprint</a>]<br />
@@ -217,9 +236,22 @@
 
 							<br />
 
-							<li><span class="papertitle">A New Approach to Round-Optimal Secure Multiparty Computation </span>[<a href="https://eprint.iacr.org/2017/402">eprint</a>]<br />
+							<li><span class="papertitle">A New Approach to Round-Optimal Secure Multiparty Computation </span>[<a href="https://eprint.iacr.org/2017/402">eprint</a>][<a data-toggle="collapse"  href="#ACJ17sum">show summary</a>]<br />
 							Prabhanjan Ananth, Arka Rai Choudhuri, Abhishek Jain<br />
 							<span class="conferencename">CRYPTO 2017</span><br />
+							<div id="ACJ17sum" class="collapse">
+								  	<span class="summary">
+								  		<p>
+								  			In this work, we look at the number of communication rounds required for Muliparty computation (MPC) where only a minority of participants may be honest. Specifically, we look to establish the tightness of known bounds in the domain: [Garg-Mukherjee-Pandey-Polychroniadou'16] established a lower bound showing no three round protocol can exist, and an upper bound by constructing a five round protocol under the strong assumption of the existence of indistinguishability obfuscation (iO); the iO assumption is unnatural given that it is not known to be required for MPC protocols. As a first step, we show that one can in fact construct five round protocols based only the mild assumption that Decisional Diffie-Hellman (DDH) is hard. Further, we show that the lower bound is tight by constructing a four round protocol under the (significantly stronger) assumption that DDH remains hard even when an adversary trying to break it is allowed to run in time sub-exponential in the security parameter. 
+								  		</p>
+
+								  		<p>
+								  			Our techniques in the construction of these protocols depart significantly from prior works in this domain. We hark back to the age old technique in [Goldreich-Micali-Wigderson'87] of each party proving honest behavior for every message it sends, but with a necessary twist. Without any additional set-up, zero-knowledge proofs require 4 rounds of interaction. Thereby, in order to squeeze in our protocol into 4 (or even 5) rounds, we construct a 3 round protocol satisfying a seemingly week privacy notion that we call robustness: privacy is maintained 
+
+								  			Cumulative proof
+								  		</p>
+								    </span>
+							</div>
 							</li>
 
 							<br />
