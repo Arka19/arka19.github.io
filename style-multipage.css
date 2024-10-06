@@ -1,0 +1,452 @@
+@font-face {
+    font-family: 'Tw Cen MT';
+    src: url("./TCM_____.TTF");
+}
+
+
+
+BODY{
+      font-family:'Tw Cen MT'; 
+      font-size:14pt; 
+      color:#000000;
+}
+
+.site {
+      display: grid;
+      grid-template-columns: 20%  1fr 20%;
+      grid-gap: 20px 10px;
+      padding: 80px 0px;
+      grid-template-areas: 
+      ". content .";
+}
+
+.navbarGrid {
+     position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+}
+
+
+#navbar {
+    font-size: 1vw;
+    max-width: 100%
+}
+
+.titleinfo {
+      grid-area: titleinfo;
+      margin-top: 20px;
+      padding: 0px 0px;
+      line-height: 25pt;
+}
+
+
+.picturecell {
+      grid-area: picturecell;
+      padding: 0px 20px;
+      display: grid;
+      grid-gap: 20px 16px;
+      grid-template-columns: 1fr auto auto auto auto auto 1fr;
+      grid-template-rows: auto 25px 1fr;
+      grid-template-areas: 
+      "profilePicture profilePicture profilePicture profilePicture profilePicture profilePicture profilePicture"
+      ". logo_a logo_b logo_c logo_d logo_e .";
+}
+
+.profilePicture {
+  grid-area: profilePicture;
+}
+
+.logo_a {
+  grid-area: logo_a;
+}
+
+.logo_b {
+  grid-area: logo_b;
+}
+
+.logo_c {
+  grid-area: logo_c;
+}
+
+.logo_d {
+  grid-area: logo_d;
+}
+
+.logo_e {
+  grid-area: logo_e;
+}
+
+.spielText {
+      grid-area: spielText;
+      text-align: justify;
+}
+
+.publications {
+      grid-area: publications;
+      padding: 20px 0px;
+}
+
+.professionalActivities {
+      grid-area: professionalActivities;
+      padding: 20px 0px;
+  }
+
+.content {
+      grid-area: content;
+      padding: 20px 0px;
+}
+
+.manuscripts {
+      grid-area: manuscripts;
+      padding: 20px 0px;
+}
+
+.talks {
+      grid-area: talks;
+      padding: 20px 0px;
+}
+
+.teaching {
+      grid-area: teaching;
+      padding: 20px 0px;
+}
+
+.misc {
+      grid-area: misc;
+      padding: 0px 0px;
+}
+
+.right {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgLogo {
+  height: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+@media screen and (min-width: 980px) /* Desktop */ {
+  .site {
+      display: grid;
+      grid-template-columns: 20% 1fr 20%;
+      grid-gap: 20px 10px;
+      padding: 80px 0px;
+      grid-template-areas: 
+      ". content .";
+   }
+
+   .index-page .site {
+      display: grid;
+      grid-template-columns: 20% 1.8fr 1fr 20%;
+      grid-gap: 20px 10px;
+      padding: 80px 0px;
+      grid-template-areas: 
+      ". titleinfo titleinfo ."
+      ".  spielText picturecell ."
+      ". professionalActivities professionalActivities .";
+   }
+}
+
+@media screen  and (max-width: 979px) /* Tablet */ {
+  .site {
+      display: grid;
+      grid-template-columns: 10%  1fr 10%;
+      grid-gap: 20px 10px;
+      padding: 80px 0px;
+      grid-template-areas:
+      ". content .";
+   }
+
+
+   .index-page .site {
+      display: grid;
+      grid-template-columns: 10% 2.5fr 1fr 10%;
+      grid-gap: 20px 10px;
+      padding: 80px 0px;
+      grid-template-areas:
+      ". titleinfo titleinfo ."
+      ".  spielText picturecell ."
+      ". professionalActivities professionalActivities .";
+   }
+}
+
+@media screen and (max-width: 500px) /* Mobile */ {
+  .site {
+      display: grid;
+      grid-template-columns: 5% 1fr 5%;
+      grid-gap: 10px 10px;
+      padding: 50px 0px;
+      grid-template-areas: 
+      ". content  .";
+   }
+
+   .index-page .site {
+      display: grid;
+      grid-template-columns: 5% 1fr 5%;
+      grid-gap: 10px 10px;
+      padding: 50px 0px;
+      grid-template-areas: 
+      ". titleinfo  ."
+      ".   picturecell ."
+      ".  spielText  ."
+      ". professionalActivities .";
+   }
+
+   .titleinfo {
+      grid-area: titleinfo;
+      margin-top: 60px;
+      padding: 0px 0px;
+      line-height: 35pt;
+  }
+
+  .picturecell {
+      grid-area: picturecell;
+      padding: 0px 20px;
+      align-self: center;
+      display: grid;
+      grid-gap: 20px 16px;
+      grid-template-columns: 1fr auto auto auto auto auto 1fr;
+      grid-template-rows: auto 25px 1fr;
+      grid-template-areas: 
+      "profilePicture profilePicture profilePicture profilePicture profilePicture profilePicture profilePicture"
+      ". logo_a logo_b logo_c logo_d logo_e .";
+  }
+
+  .profilePicture {
+  grid-area: profilePicture;
+}
+
+.logo_a {
+  grid-area: logo_a;
+}
+
+.logo_b {
+  grid-area: logo_b;
+}
+
+.logo_c {
+  grid-area: logo_c;
+}
+
+.logo_d {
+  grid-area: logo_d;
+}
+
+.logo_e {
+  grid-area: logo_e;
+}
+
+.spielText {
+      grid-area: spielText;
+      text-align: justify;
+  }
+
+.publications {
+      grid-area: publications;
+      padding: 0px 0px;
+  }
+
+.manuscripts {
+      grid-area: manuscripts;
+      padding: 0px 0px;
+  }
+
+.professionalActivities {
+      grid-area: professionalActivities;
+      padding: 0px 0px;
+  }
+
+.talks {
+      grid-area: talks;
+      padding: 0px 0px;
+  }
+
+.teaching {
+      grid-area: teaching;
+      padding: 0px 0px;
+  }
+
+.misc {
+      grid-area: misc;
+      padding: 0px 0px;
+  }
+
+  .right {
+  max-width: 100%;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  .imgLogo {
+  height: 25px;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
+
+
+
+
+
+.sitename {
+      color:#036887;
+}
+
+.maintitlename { 
+      font-family:'Tw Cen MT';
+      font-size:45pt; 
+      color:#036887; 
+      font-weight:500;
+}
+
+.subheading {
+      font-size:18pt; 
+      color:#2C3E50; 
+      font-weight:500;
+}
+                  
+.papertitle {
+      font-family:'Tw Cen MT';
+      font-size:17pt; 
+      color:#036887; 
+      font-weight:500;
+}
+
+.conferencename {
+      font-family:'Tw Cen MT';
+      font-size:14pt; 
+      color:#96281B;
+}
+                  
+.emailaddress {
+      font-size:14pt; 
+      color:#96281B;
+}
+
+.section {
+      font-family:'Tw Cen MT';
+      font-size:25pt;
+      color:#2C3E50; 
+      text-align:justify; 
+      font-weight:500;
+}
+
+p {
+      font-size:14pt;
+}
+
+
+a {
+      color:#079992; 
+      font-size:14pt;
+      text-decoration: none
+}
+
+a:visited {
+      color:#079992;
+      font-size:14pt;
+}
+
+a:hover {
+      font-size:14pt;
+      text-decoration: none;
+}
+
+.spielText a {
+      color:#079992; 
+      font-size:18pt;
+      text-decoration: none
+}
+
+.spielText a:visited {
+      color:#079992;
+      font-size:18pt;
+}
+
+.spielText a:hover {
+      font-size:18pt;
+      text-decoration: none;
+}
+
+ul {
+      list-style-type: square; 
+      margin:0; 
+      padding:5
+}                
+
+.summary {      
+      background-color: lightblue;
+      font-size:14pt;
+      text-align: justify;
+}
+
+.summary p {      
+      font-size:14pt;
+      line-height: 1.5;
+      padding: 0px 20px;
+}
+
+.summary a, .summary a:visited {
+      color: #306D60; 
+}
+
+
+.collapse {
+      background-color: #dfe4ea;
+      margin-top: 5pt;
+      margin-left: 10pt;
+      padding-top: 5pt;
+      padding-bottom: 5pt;
+}
+
+hr { 
+    border-color: #000000;     
+    border-width: 1px;
+}
+
+
+.subtitle {
+  text-align: justify;
+	line-height: 12pt;
+}
+
+
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #036887;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color  on hover */
+#navbar li a:hover {
+    background-color: #079992;
+}
+
+#navbar .active {
+    background-color: #96281B;
+}
