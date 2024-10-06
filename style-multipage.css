@@ -144,7 +144,7 @@ BODY{
 
    .index-page .site {
       display: grid;
-      grid-template-columns: 20% 1.8fr 1fr 20%;
+      grid-template-columns: 20% 1.8fr auto 20%;
       grid-gap: 20px 10px;
       padding: 80px 0px;
       grid-template-areas: 
@@ -152,6 +152,14 @@ BODY{
       ".  spielText picturecell ."
       ". professionalActivities professionalActivities .";
    }
+
+   .spielText {
+      grid-area: : spielText;
+      overflow: hidden;
+      min-height: 120px;
+   }
+
+
 }
 
 @media screen  and (max-width: 979px) /* Tablet */ {
@@ -167,7 +175,7 @@ BODY{
 
    .index-page .site {
       display: grid;
-      grid-template-columns: 10% 2.5fr 1fr 10%;
+      grid-template-columns: 10% 2.5fr auto 10%;
       grid-gap: 20px 10px;
       padding: 80px 0px;
       grid-template-areas:
@@ -175,6 +183,12 @@ BODY{
       ".  spielText picturecell ."
       ". professionalActivities professionalActivities .";
    }
+
+   .spielText {
+      grid-area: : spielText;
+      overflow: hidden;
+   }
+
 }
 
 @media screen and (max-width: 500px) /* Mobile */ {
